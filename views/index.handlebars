@@ -35,5 +35,15 @@
             </div>
 
         </div>
+        <div class="col-xs-6 text-center" class="task">
+            <div class="row">
+                {{#each burgers}}
+                {{#if this.devoured}}
+                <div class="col-xs-9 text-center">
+                    <pre>{{this.id}}. {{this.burger_name}}</pre>
+                </div>
+                {{/if}}
+                {{/each}}
+            </div>
     </div>
 </div>

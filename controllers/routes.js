@@ -18,10 +18,24 @@ router.post("/burgers/create", function(req, res){
 
     })
 })
+router.post("/burgers/update/:id", function(req, res){
+    console.log("burger id in routes: " + req.params.id);
+    updateToDevour(req.params.id);
+//     burger.create(req.body.burger_name, function(result){
+//          console.log(result);
+//          res.redirect("/");
+// ​
+//      })
+})
 router.put("/burgers/:id", function(req, res){
     burger.update(req.params.id, function(result){
         console.log(result)
     })
 })
+function updateToDevour(id) {
+    burger.update(id, function(result){
+        console.log(result)
+    })
+}
 
 module.exports = router;
