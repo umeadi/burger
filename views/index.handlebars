@@ -11,7 +11,7 @@
                     <pre>{{this.id}}. {{this.burger_name}}</pre>
                 </div>
                 <div class="col-xs-3 text-center">
-                    <form class="button-size devour-button">
+                    <form action='/burgers/update/{{this.id}}' method="post" class="button-size devour-button">
                         <input type="hidden" class="burger_id" type="text" value={{this.id}}>
                         <br>
                         <button type="submit" class="btn btn-default">
@@ -31,9 +31,7 @@
                         <button type="submit" class="btn btn-primary" id="submit-burger">Submit</button>
                     </form>
                 </div>
-
             </div>
-
         </div>
         <div class="col-xs-6 text-center" class="task">
             <div class="row">
@@ -45,5 +43,6 @@
                 {{/if}}
                 {{/each}}
             </div>
+        </div>
     </div>
 </div>

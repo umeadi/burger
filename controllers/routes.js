@@ -23,13 +23,14 @@ router.post("/burgers/update/:id", function(req, res){
     updateToDevour(req.params.id);
 //     burger.create(req.body.burger_name, function(result){
 //          console.log(result);
-//          res.redirect("/");
-// ​
+         res.redirect("/");
 //      })
 })
 router.put("/burgers/:id", function(req, res){
+    console.log("inside put route")
     burger.update(req.params.id, function(result){
         console.log(result)
+        res.redirect("/");
     })
 })
 function updateToDevour(id) {
