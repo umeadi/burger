@@ -30,7 +30,8 @@ router.put("/burgers/:id", function(req, res){
     console.log("inside put route")
     burger.update(req.params.id, function(result){
         console.log(result)
-        res.redirect("/");
+        // res.redirect("/");
+        res.sendStatus(200);
     })
 })
 function updateToDevour(id) {

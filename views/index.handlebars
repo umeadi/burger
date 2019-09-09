@@ -11,13 +11,18 @@
                     <pre>{{this.id}}. {{this.burger_name}}</pre>
                 </div>
                 <div class="col-xs-3 text-center">
-                    <form action='/burgers/update/{{this.id}}' method="post" class="button-size devour-button">
+
+                    <form 
+                    action='/burgers/update/{{this.id}}' method="put"
+                    class="button-size devour-button">
                         <input type="hidden" class="burger_id" type="text" value={{this.id}}>
                         <br>
                         <button type="submit" class="btn btn-default">
                             DEVOUR IT!
                         </button>
                     </form>
+
+
                 </div>
                 {{/unless}}
                 {{/each}}

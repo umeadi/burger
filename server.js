@@ -15,7 +15,7 @@ app.set("view engine", "handlebars");
 var routes = require("./controllers/routes");
 app.use("/", routes);
 
-var port = 3000;
+var port = 7000;
 app.listen(port, function(){
     console.log("*******************************");
     console.log("App now listening on port: " + port);
