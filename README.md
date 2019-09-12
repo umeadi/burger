@@ -1,4 +1,4 @@
-# burger/devour app
+# burger/devour app 🍔
 
 
 "Eat Da Burger!!"
