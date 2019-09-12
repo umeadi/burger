@@ -14,7 +14,7 @@ A computer and web browser with an active internet connection.
 
 ## Deployment
 
-* (https://frozen-dusk-90052.herokuapp.com/)
+* (https://burgerapp666.herokuapp.com/)
 
 ## Built With
 
